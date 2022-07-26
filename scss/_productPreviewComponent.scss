@@ -1,0 +1,97 @@
+.product-preview-card {
+    height: inherit;
+}
+
+.product-preview-card-inner {
+    grid-template-columns: repeat(2, 1fr);
+    width: 35%;
+    height: 44.5%;
+    margin: auto;
+    border-radius: 0.5rem;
+
+    &_image {
+        background-image: url("/images/image-product-desktop.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+
+        height: 100%;
+        width: 100%;
+    }
+
+    &_content {
+        height: 100%;
+        padding: 0 8%;
+        background-color: $white;
+
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+
+        &_header {
+
+            .header-subtitle {
+                margin: 1rem 0 0.8rem;
+                color: $dark-grayish-blue;
+                font-size: 0.75rem;
+                font-weight: 500;
+                letter-spacing: 0.18rem;
+            }
+
+            .header-title {
+                width: 80%;
+                font-family: 'Fraunces', serif;
+                font-size: 1.6rem;
+            }
+        }
+
+        &_body {
+
+            .body-description {
+                font-size: 0.75rem;
+                color: $dark-grayish-blue;
+                width: 95%;
+            }
+
+            .body-prices-container {
+                align-items: center;
+                gap: 0.8rem;
+
+                &_sale {
+                    font-family: 'Fraunces', serif;
+                    color: $dark-cyan;
+                    font-size: 1.5rem;
+                }
+
+                &_old {
+                    font-size: 0.75rem;
+                    color: $dark-grayish-blue;
+                    text-decoration: line-through;
+                }
+
+            }
+
+        }
+
+        &_bottom {
+            background-color: $dark-cyan;
+            padding: 5%;
+            width: 87%;
+            margin: auto;
+            margin-bottom: 1.2rem;
+            border-radius: 0.5rem;
+            color: $white;
+            gap: 0.75rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $very-dark-blue;
+            }
+
+            .action-button {
+                font-size: 0.7rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

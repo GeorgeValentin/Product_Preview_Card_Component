@@ -1,0 +1,16 @@
+@media(max-width: 375px) {
+    .product-preview-card-inner {
+        grid-template-columns: 1fr;
+        height: 75%;
+        width: 88%;
+
+        &_image {
+            //background-size: 10rem 5rem;
+            background-position: center -130px;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+
+            border-bottom-left-radius: 0;
+        }
+    }
+} 
