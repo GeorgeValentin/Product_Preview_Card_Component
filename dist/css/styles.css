@@ -116,7 +116,7 @@ body {
 @media (max-width: 375px) {
   .product-preview-card-inner {
     grid-template-columns: 1fr;
-    height: 75%;
+    height: 77%;
     width: 88%;
   }
   .product-preview-card-inner_image {
