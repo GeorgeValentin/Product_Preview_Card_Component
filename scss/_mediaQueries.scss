@@ -5,12 +5,46 @@
         width: 88%;
 
         &_image {
-            //background-size: 10rem 5rem;
-            background-position: center -130px;
-            border-top-left-radius: 0.5rem;
-            border-top-right-radius: 0.5rem;
+            height: 17rem;
 
-            border-bottom-left-radius: 0;
+            &_container {
+                background-position: center -120px;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+    
+                border-bottom-left-radius: 0;
+            }
         }
+
+        &_content {
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+
+            &_header {
+
+                .header-title {
+                    width: 90%;
+                    font-size: 1.8rem;
+                }
+
+            }
+
+            &_body {
+
+                .body-description {
+                    width: 91%;
+                }
+
+                .body-prices-container {
+                    &_sale {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+
     }
 } 
